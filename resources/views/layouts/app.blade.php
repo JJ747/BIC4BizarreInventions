@@ -143,7 +143,7 @@
 
     <footer class="footer">
         <div class="content has-text-centered">
-            <small>Here comes some footer</small>
+            <small>&copy; 2021 - Sandra Hofer, Julia Janusch, Patrick Pachinger, Andre Schneider, Christian Vana</small>
         </div>
     </footer>
 </div>
