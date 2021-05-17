@@ -4,8 +4,7 @@
 @section('content')
     <section class="section">
         <div class="container">
-            <p> Test</p>
-            <inventions :all-inventions="{{ $invention }}" :current-user="{{ Auth::user() }}"></inventions>
+            <h1>List invention</h1>
         </div>
     </section>
 @endsection
