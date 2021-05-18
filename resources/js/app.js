@@ -23,6 +23,7 @@ window.Vue = vue;
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('query-message', require('./components/base/QueryMessage.vue').default);
 Vue.component('dashboard', require('./components/DashboardComponent.vue').default);
+Vue.component('invention-index', require('./components/base/InventionIndexComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
