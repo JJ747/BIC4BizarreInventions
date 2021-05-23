@@ -25,6 +25,11 @@ Vue.component('query-message', require('./components/base/QueryMessage.vue').def
 Vue.component('dashboard', require('./components/DashboardComponent.vue').default);
 Vue.component('invention-index', require('./components/base/InventionIndexComponent.vue').default);
 
+Vue.component('domain-index', require('./components/domain/ListDomainsComponent.vue').default);
+Vue.component('domain-show', require('./components/domain/ShowDomainComponent.vue').default);
+Vue.component('domain-create', require('./components/domain/CreateDomainComponent.vue').default);
+Vue.component('domain-edit', require('./components/domain/EditDomainComponent.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
