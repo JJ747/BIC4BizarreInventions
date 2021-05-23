@@ -4,7 +4,8 @@
 @section('content')
     <section class="section">
         <div class="container">
-            <h1>Show domain</h1>
+            <h1 class="title">{{ $domain->name }}</h1>
+            <domain-show :domain="{{ $domain }}"></domain-show>
         </div>
     </section>
 @endsection

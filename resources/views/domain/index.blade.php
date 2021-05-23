@@ -4,7 +4,8 @@
 @section('content')
     <section class="section">
         <div class="container">
-            <h1>List domains</h1>
+            <h1 class="title">Domains</h1>
+            <domain-index :domains="{{ $domain }}"></domain-index>
         </div>
     </section>
 @endsection
