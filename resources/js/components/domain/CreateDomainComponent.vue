@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p id="text"></p>
     <form @submit.prevent="submit">
       <div class="field">
         <label class="label">Name</label>
@@ -26,12 +25,6 @@
 </template>
 
 <script>
-let form = new Form({
-  name: "",
-  slug: "",
-  description: ""
-});
-
 export default {
   data() {
     return {
