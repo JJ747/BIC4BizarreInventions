@@ -37,7 +37,7 @@
                                 </div>
 
                                 <div class="field">
-                                    <label class="label" for="password">Password</label>
+                                    <label class="label" for="password">Password (must have at least 8 characters)</label>
                                     <div class="control">
                                         <input name="password" id="password"
                                                class="input @error('password') is-danger @enderror"
