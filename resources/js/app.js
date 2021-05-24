@@ -30,6 +30,13 @@ Vue.component('domain-show', require('./components/domain/ShowDomainComponent.vu
 Vue.component('domain-create', require('./components/domain/CreateDomainComponent.vue').default);
 Vue.component('domain-edit', require('./components/domain/EditDomainComponent.vue').default);
 
+Vue.component('invention-index', require('./components/invention/ListInventionsComponent.vue').default);
+Vue.component('invention-show', require('./components/invention/ShowInventionComponent.vue').default);
+Vue.component('invention-create', require('./components/invention/CreateInventionComponent.vue').default);
+Vue.component('invention-edit', require('./components/invention/EditInventionComponent.vue').default);
+Vue.component('invention-search', require('./components/invention/SearchInventionComponent.vue').default);
+
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

@@ -2,9 +2,10 @@
 
 
 @section('content')
-    <section class="section is-halfheight">
-        <invention-index title="Juhu">
-            <p>Juhu <strong>{{Auth::user()->name }}</strong> ist nicht nutzlos</p>
-        </invention-index>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Inventions</h1>
+            <invention-index :inventions="{{ $invention }}"></invention-index>
+        </div>
     </section>
 @endsection
