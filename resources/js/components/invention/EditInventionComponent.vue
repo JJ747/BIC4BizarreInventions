@@ -34,9 +34,9 @@ export default {
     data() {
         return {
                 form: new Form({
-                    name: this.domain.name,
-                    description: this.domain.description,
-                    domain_id: this.domain.domain_id
+                    name: this.invention.name,
+                    description: this.invention.description,
+                    domain_id: this.invention.domain_id
                 })
         };
     },
