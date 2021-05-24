@@ -73,7 +73,7 @@ class InventionController extends Controller
      */
     public function edit(Invention $invention)
     {
-        return view('invention.edit', compact($invention));
+        return view('invention.edit', compact('invention'));
     }
 
     /**
