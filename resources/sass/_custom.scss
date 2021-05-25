@@ -1,5 +1,6 @@
 .main {
-    background: #F7F7F7;
+    background: #707070;
+    color: white;
 }
 
 .is-fullheight.columns {
@@ -35,13 +36,100 @@
             font-size: 1.2rem;
             font-weight: lighter;
         }
+
     }
+}
+
+.card-header {
+    background-color: #FFD60C;
+}
+
+.card-header-title {
+    color: black;
 }
 
 .footer{
     height: 5vh;
+    background-color: #3F3F3F;
+    color: white;
 }
 
 .hero.is-fullheight-with-navbar{
     min-height: calc(100vh - 6.75rem);
 }
+
+* {
+    font-family: "Quicksand", sans-serif;
+}
+
+.navbar, .navbar:hover .navbar-dropdown, .navbar-dropdown:hover {
+    background-color: #3F3F3F;
+    color: white;
+}
+
+.navbar-item, .navbar-link {
+    color: white;
+    background-color: #3F3F3F;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+    border-color: #FFD60C;
+}
+
+a.navbar-item.is-active, .navbar-link.is-active {
+    color: #FFD60C;
+}
+
+a.navbar-item.is-active:hover, .navbar-link.is-active:hover {
+    background-color: #3F3F3F;
+}
+
+.title {
+    color: white;
+}
+
+.button.is-success, .button.is-success:hover, .button.is-success:focus {
+    background-color: #FFD60C;
+    color: black;
+}
+
+.button.is-danger, .button.is-danger:hover, .button.is-danger:focus {
+    background-color: #ff0c5d;
+}
+
+.button.is-info, .button.is-info:hover, .button.is-info:focus {
+    background-color: #ae0cff;
+}
+
+.button.is-primary, .button.is-primary:hover, .button.is-primary:focus {
+    background-color: #FFD60C;
+    color: black;
+}
+
+.button.is-light, .button.is-light:hover, .button.is-light:focus {
+    background-color: white;
+    color: #3F3F3F;
+}
+
+.button.is-primary.is-outlined {
+    background-color: transparent;
+    border-color: #FFD60C;
+    color: #FFD60C;
+}
+
+.button.is-primary.is-outlined:hover, .button.is-primary.is-outlined:focus {
+    background-color: #FFD60C;
+    color: white;
+}
+
+.input:focus {
+    border-color: #FFD60C;
+    box-shadow: none;
+}
+
+.label {
+    color: white;
+}
+
+
+

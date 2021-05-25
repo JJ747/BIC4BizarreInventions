@@ -21,7 +21,7 @@
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
                                 <div class="field">
-                                    <label class="label" for="email">Email</label>
+                                    <label class="label-login" for="email">Email</label>
                                     <div class="control">
                                         <input id="email" title="email" name="email" type="email" required
                                                autocomplete="email" autofocus
@@ -34,7 +34,7 @@
                                 </div>
 
                                 <div class="field">
-                                    <label class="label" for="password">Password</label>
+                                    <label class="label-login" for="password">Password</label>
                                     <div class="control">
                                         <input id="password" title="password" name="password" type="password" required
                                                autocomplete="current-password"

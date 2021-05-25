@@ -19,7 +19,7 @@
                     <textarea v-model="form.domain_id" class="textarea" placeholder="Domain ID"></textarea>
                 </div>
             </div>
-            <button type="submit" class="button is-success">Create invention</button>
+            <button type="submit" class="button is-success">Change invention</button>
         </form>
     </div>
 </template>

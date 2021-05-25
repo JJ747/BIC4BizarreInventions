@@ -13,7 +13,7 @@
                             <form method="POST" action="{{ route('register') }}">
                                 @csrf
                                 <div class="field">
-                                    <label class="label" for="name">{{ __('Name') }}</label>
+                                    <label class="label-register" for="name">{{ __('Name') }}</label>
                                     <div class="control">
                                         <input name="name" class="input @error('name') is-danger @enderror"
                                                type="text" id="name"
@@ -26,7 +26,7 @@
                                 </div>
 
                                 <div class="field">
-                                    <label class="label" for="email">Email</label>
+                                    <label class="label-register" for="email">Email</label>
                                     <div class="control">
                                         <input name="email" id="email" class="input @error('email') is-danger @enderror"
                                                type="email" required>
@@ -37,7 +37,7 @@
                                 </div>
 
                                 <div class="field">
-                                    <label class="label" for="password">Password (must have at least 8 characters)</label>
+                                    <label class="label-register" for="password">Password (must have at least 8 characters)</label>
                                     <div class="control">
                                         <input name="password" id="password"
                                                class="input @error('password') is-danger @enderror"
@@ -50,7 +50,7 @@
                                 </div>
 
                                 <div class="field">
-                                    <label class="label" for="password-confirm">Confirm Password</label>
+                                    <label class="label-register" for="password-confirm">Confirm Password</label>
                                     <div class="control">
                                         <input class="input field-spacer" type="password"
                                                id="password-confirm" name="password_confirmation"
