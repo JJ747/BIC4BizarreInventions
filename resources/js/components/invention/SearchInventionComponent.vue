@@ -1,13 +1,17 @@
 <template>
     <div>
-        <input type="text" placeholder="Search" v-model="keywords">
-        <ul v-if="results.length > 0 && keywords">
-            <li v-for="result in results.slice(0,10)" :key="result.id">
-                <a :href="result.url">
-                    <div v-text="result.title"></div>
-                </a>
-            </li>
-        </ul>
+        <form @submit.prevent="fetch">
+            <input type="text" placeholder="Search" v-model="q">
+            <button type="submit" class="button is-success" @Click="fetch(this.q)">Search</button>
+        </form>
+        <table class="table is-fullwidth is-hoverable">
+            <tr v-for="result in results" :key="result.id" @click="goToInvention(result.slug)">
+                <td>{{ result.id }}</td>
+                <td>{{ result.name }}</td>
+                <td>{{ result.description }}</td>
+                <td>{{ result.domain_id }}</td>
+            </tr>
+        </table>
     </div>
 </template>
 
@@ -15,20 +19,20 @@
 export default {
     data() {
         return {
-            keywords: null,
+            q: null,
             results: []
         };
     },
-    watch: {
-        keywords(after, before) {
-            this.fetch();
-        }
-    },
     methods: {
         fetch() {
-            axios.get('/search/invention', { params: { keywords: this.keywords } })
+            axios.post('/search/invention', {
+                q: this.q
+            })
                 .then(response => this.results = response.data)
                 .catch(error => {});
+        },
+        goToInvention(slug) {
+            window.location.href = "/invention/" + slug;
         }
     }
 }
