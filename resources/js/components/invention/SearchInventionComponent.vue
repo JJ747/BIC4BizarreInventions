@@ -1,8 +1,8 @@
 <template>
     <div>
-        <form @submit.prevent="fetch">
+        <form class="form has-padding" @submit.prevent="fetch">
             <input type="text" placeholder="Search" v-model="q">
-            <button type="submit" class="button is-success" @Click="fetch(this.q)">Search</button>
+            <button type="submit" class="button is-success">Search</button>
         </form>
         <table class="table is-fullwidth is-hoverable">
             <thead>
