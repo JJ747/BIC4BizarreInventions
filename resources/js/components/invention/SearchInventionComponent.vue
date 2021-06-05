@@ -1,7 +1,7 @@
 <template>
     <div>
-        <form class="form has-padding" @submit.prevent="fetch">
-            <input type="text" placeholder="Search" v-model="q">
+        <form class="form" style="margin-bottom: 20px" @submit.prevent="fetch">
+            <input type="text" class="input" style="width: 350px;" placeholder="Search" v-model="q">
             <button type="submit" class="button is-success">Search</button>
         </form>
         <table class="table is-fullwidth is-hoverable">

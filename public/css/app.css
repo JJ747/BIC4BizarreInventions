@@ -7685,7 +7685,7 @@ a.navbar-item.is-active,
 .navbar-link:focus-within,
 .navbar-link:hover,
 .navbar-link.is-active {
-  background-color: #fafafa;
+  background-color: #3F3F3F;
   color: #FFD60C;
 }
 
@@ -8067,7 +8067,7 @@ a.navbar-item.is-active,
   .navbar-item.has-dropdown:focus .navbar-link,
   .navbar-item.has-dropdown:hover .navbar-link,
   .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: #fafafa;
+    background-color: #3F3F3F;
   }
 }
 
@@ -11860,5 +11860,9 @@ a.navbar-item.is-active:hover,
 
 .label {
   color: white;
+}
+
+.form.has-padding {
+  margin: 20px;
 }
 
